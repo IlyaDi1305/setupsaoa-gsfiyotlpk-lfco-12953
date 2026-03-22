@@ -9,10 +9,10 @@
 }
 
 :root {
-    /* Color Palette - Georgian Restaurant Theme */
-    --primary-wine: #8B1538;
-    --secondary-gold: #C9A961;
-    --accent-terracotta: #C85A3E;
+    /* Color Palette - Russian Restaurant Theme */
+    --primary-red: #C41E3A;
+    --secondary-gold: #D4AF37;
+    --accent-blue: #0033A0;
     --dark-brown: #3E2723;
     --warm-cream: #F5F1E8;
     --light-beige: #EDE7DB;
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-wine), var(--secondary-gold));
+    background: linear-gradient(90deg, var(--primary-red), var(--secondary-gold));
     margin: 1rem auto 0;
     border-radius: 2px;
 }
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #8B1538 0%, #C85A3E 50%, #C9A961 100%);
+    background: linear-gradient(135deg, #C41E3A 0%, #0033A0 50%, #D4AF37 100%);
     overflow: hidden;
 }
 
@@ -240,8 +240,8 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(139, 21, 56, 0.3) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(196, 30, 58, 0.3) 0%, transparent 50%);
     animation: pulse 8s ease-in-out infinite;
 }
 
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(139, 21, 56, 0.15);
+    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.15);
 }
 
 .feature-icon {
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 .feature-card h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-wine);
+    color: var(--primary-red);
 }
 
 .feature-card p {
@@ -412,13 +412,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .tab-btn:hover {
     border-color: var(--secondary-gold);
-    color: var(--primary-wine);
+    color: var(--primary-red);
 }
 
 .tab-btn.active {
-    background: var(--primary-wine);
+    background: var(--primary-red);
     color: var(--white);
-    border-color: var(--primary-wine);
+    border-color: var(--primary-red);
 }
 
 .tab-content {
@@ -458,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-item:hover {
     transform: translateX(5px);
-    box-shadow: 0 5px 25px rgba(139, 21, 56, 0.1);
+    box-shadow: 0 5px 25px rgba(196, 30, 58, 0.1);
 }
 
 .menu-item-header {
@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--primary-wine);
+    color: var(--primary-red);
 }
 
 .menu-item-desc {
@@ -559,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .review-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(139, 21, 56, 0.15);
+    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.15);
 }
 
 .review-stars {
@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-wine), var(--secondary-gold));
+    background: linear-gradient(135deg, var(--primary-red), var(--secondary-gold));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -629,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
 .info-block h3 {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
-    color: var(--primary-wine);
+    color: var(--primary-red);
 }
 
 .info-block p {
@@ -674,7 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 .accordion-icon {
     font-size: 1.5rem;
     font-weight: 300;
-    color: var(--primary-wine);
+    color: var(--primary-red);
     transition: transform 0.3s ease;
 }
 
@@ -741,12 +741,12 @@ h1, h2, h3, h4, h5, h6 {
 .form-group input.error,
 .form-group select.error,
 .form-group textarea.error {
-    border-color: var(--accent-terracotta);
+    border-color: var(--primary-red);
 }
 
 .error-message {
     display: block;
-    color: var(--accent-terracotta);
+    color: var(--primary-red);
     font-size: 0.85rem;
     margin-top: 0.3rem;
     min-height: 1.2rem;
