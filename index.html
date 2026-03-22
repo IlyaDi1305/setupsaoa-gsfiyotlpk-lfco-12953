@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ресторан грузинской кухни в Краснодаре. Аутентичные блюда, домашняя атмосфера, традиционное гостеприимство.">
+    <title>Сакартвело - Ресторан грузинской кухни в Краснодаре</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1 class="logo">სახლი Сакартвело</h1>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#menu" class="nav-link">Меню</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title fade-in">Добро пожаловать в мир грузинского гостеприимства</h2>
+            <p class="hero-subtitle fade-in">Аутентичная кухня Грузии в самом сердце Краснодара</p>
+            <a href="#menu" class="btn btn-primary fade-in">Посмотреть меню</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h2 class="section-title">О нас</h2>
+                    <p>Ресторан "Сакартвело" - это уголок Грузии в Краснодаре, где каждое блюдо приготовлено по традиционным семейным рецептам. Мы используем только свежие продукты и настоящие грузинские специи.</p>
+                    <p>Наша миссия - подарить вам незабываемые впечатления от грузинской кухни и создать атмосферу тепла и радушия, которой славится Грузия.</p>
+                </div>
+                <div class="about-features reveal">
+                    <div class="feature-card">
+                        <div class="feature-icon">🍷</div>
+                        <h3>Винная карта</h3>
+                        <p>Более 50 сортов грузинских вин</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h3>Шеф-повар из Грузии</h3>
+                        <p>Аутентичные рецепты</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Живая музыка</h3>
+                        <p>По пятницам и субботам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Наше меню</h2>
+            <p class="section-subtitle text-center reveal">Попробуйте лучшие блюда грузинской кухни</p>
+            
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-tab="hot">Горячие блюда</button>
+                <button class="tab-btn" data-tab="cold">Холодные закуски</button>
+                <button class="tab-btn" data-tab="khachapuri">Хачапури</button>
+                <button class="tab-btn" data-tab="desserts">Десерты</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Hot Dishes -->
+                <div class="tab-content active" id="hot">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Хинкали</h3>
+                                <span class="price">90₽/шт</span>
+                            </div>
+                            <p class="menu-item-desc">Сочные грузинские пельмени с мясом и ароматным бульоном внутри</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Чахохбили</h3>
+                                <span class="price">650₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тушеная курица в томатном соусе с грузинскими специями</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Чанахи</h3>
+                                <span class="price">720₽</span>
+                            </div>
+                            <p class="menu-item-desc">Баранина с овощами, запеченная в глиняном горшочке</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Оджахури</h3>
+                                <span class="price">580₽</span>
+                            </div>
+                            <p class="menu-item-desc">Жареное мясо с картофелем, грибами и специями</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Cold Appetizers -->
+                <div class="tab-content" id="cold">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Пхали ассорти</h3>
+                                <span class="price">480₽</span>
+                            </div>
+                            <p class="menu-item-desc">Три вида пхали: из шпината, свеклы и фасоли с орехами</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Баклажаны с орехами</h3>
+                                <span class="price">420₽</span>
+                            </div>
+                            <p class="menu-item-desc">Рулетики из баклажанов с ореховой начинкой</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Лобио</h3>
+                                <span class="price">380₽</span>
+                            </div>
+                            <p class="menu-item-desc">Пряная фасоль с кинзой, луком и специями</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Сациви</h3>
+                                <span class="price">520₽</span>
+                            </div>
+                            <p class="menu-item-desc">Курица в ореховом соусе с чесноком и специями</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Khachapuri -->
+                <div class="tab-content" id="khachapuri">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Хачапури по-аджарски</h3>
+                                <span class="price">450₽</span>
+                            </div>
+                            <p class="menu-item-desc">Лодочка с сулугуни, маслом и яйцом</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Хачапури по-имеретински</h3>
+                                <span class="price">380₽</span>
+                            </div>
+                            <p class="menu-item-desc">Круглая лепешка с сыром внутри</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Хачапури по-мегрельски</h3>
+                                <span class="price">420₽</span>
+                            </div>
+                            <p class="menu-item-desc">С сыром внутри и снаружи</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Лобиани</h3>
+                                <span class="price">350₽</span>
+                            </div>
+                            <p class="menu-item-desc">Лепешка с фасолевой начинкой</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Чурчхела</h3>
+                                <span class="price">180₽</span>
+                            </div>
+                            <p class="menu-item-desc">Орехи в виноградном соке, традиционная сладость</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Пеламуши</h3>
+                                <span class="price">220₽</span>
+                            </div>
+                            <p class="menu-item-desc">Десерт из виноградного сока с орехами</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Гозинаки</h3>
+                                <span class="price">200₽</span>
+                            </div>
+                            <p class="menu-item-desc">Орехи в карамелизированном меде</p>
+                        </article>
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Назуки</h3>
+                                <span class="price">150₽</span>
+                            </div>
+                            <p class="menu-item-desc">Пряный грузинский хлеб с изюмом и специями</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Галерея</h2>
+            <p class="section-subtitle text-center reveal">Атмосфера и блюда нашего ресторана</p>
+            
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);">
+                    <div class="gallery-overlay">
+                        <span>Хинкали</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #CD853F 0%, #DEB887 100%);">
+                    <div class="gallery-overlay">
+                        <span>Хачапури по-аджарски</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #A0522D 0%, #CD853F 100%);">
+                    <div class="gallery-overlay">
+                        <span>Интерьер зала</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);">
+                    <div class="gallery-overlay">
+                        <span>Винная карта</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #B8860B 0%, #DAA520 100%);">
+                    <div class="gallery-overlay">
+                        <span>Пхали ассорти</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);">
+                    <div class="gallery-overlay">
+                        <span>Летняя веранда</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Отзывы гостей</h2>
+            <p class="section-subtitle text-center reveal">Что говорят о нас наши посетители</p>
+            
+            <div class="reviews-grid">
+                <article class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Потрясающее место! Хинкали просто тают во рту, а атмосфера напоминает настоящую Грузию. Обязательно вернемся еще!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">М</div>
+                        <div class="author-info">
+                            <h4>Мария Соколова</h4>
+                            <span>2 недели назад</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Лучший грузинский ресторан в Краснодаре! Хачапури по-аджарски - это нечто! Персонал очень приветливый, чувствуешь себя как дома."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">А</div>
+                        <div class="author-info">
+                            <h4>Александр Петров</h4>
+                            <span>1 месяц назад</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Были тут на корпоративе - все на высшем уровне! Кухня изумительная, вина отличные, живая музыка создает неповторимую атмосферу."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">Е</div>
+                        <div class="author-info">
+                            <h4>Елена Краснова</h4>
+                            <span>3 недели назад</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Контакты и бронирование</h2>
+            <p class="section-subtitle text-center reveal">Свяжитесь с нами или забронируйте столик</p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="info-block">
+                        <h3>📍 Адрес</h3>
+                        <p>г. Краснодар, ул. Красная, 123</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>📞 Телефон</h3>
+                        <p>+7 (861) 234-56-78</p>
+                        <p>+7 (918) 765-43-21</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>🕐 Режим работы</h3>
+                        <p>Пн-Чт: 12:00 - 23:00</p>
+                        <p>Пт-Вс: 12:00 - 02:00</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>📧 Email</h3>
+                        <p>info@sakartvelo-krd.ru</p>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Как забронировать столик?</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Вы можете забронировать столик по телефону, через форму на сайте или при личном визите. Рекомендуем бронировать заранее, особенно на выходные.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Есть ли парковка?</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Да, для наших гостей доступна бесплатная парковка на 20 мест возле ресторана.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Проводите ли вы банкеты?</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Да, у нас есть отдельный банкетный зал на 50 персон. Мы организуем свадьбы, корпоративы и другие мероприятия.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата и время</label>
+                        <input type="datetime-local" id="date" name="date">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Количество гостей</label>
+                        <select id="guests" name="guests">
+                            <option value="">Выберите количество</option>
+                            <option value="1-2">1-2 человека</option>
+                            <option value="3-4">3-4 человека</option>
+                            <option value="5-8">5-8 человек</option>
+                            <option value="9+">9+ человек</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Комментарий</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                    <div class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>სახლი Сакартвело</h3>
+                    <p>Грузинский ресторан в Краснодаре</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK">VK</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Telegram">TG</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>г. Краснодар, ул. Красная, 123</li>
+                        <li>+7 (861) 234-56-78</li>
+                        <li>info@sakartvelo-krd.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Режим работы</h4>
+                    <ul>
+                        <li>Пн-Чт: 12:00 - 23:00</li>
+                        <li>Пт-Вс: 12:00 - 02:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Сакартвело. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
