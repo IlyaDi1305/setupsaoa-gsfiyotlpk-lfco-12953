@@ -1,5 +1,5 @@
 // ========================================
-// Georgian Restaurant Website - Interactive Features
+// Russian Restaurant Website - Interactive Features
 // Pure Vanilla JavaScript - No Dependencies
 // ========================================
 
@@ -438,7 +438,7 @@
     // Console Message
     // ========================================
     
-    console.log('%c🍷 Добро пожаловать в Сакартвело!', 'color: #C9A961; font-size: 16px; font-weight: bold;');
-    console.log('%cРесторан грузинской кухни в Краснодаре', 'color: #8B1538; font-size: 12px;');
+    console.log('%c🏠 Добро пожаловать в Русскую Избу!', 'color: #D4AF37; font-size: 16px; font-weight: bold;');
+    console.log('%cРесторан русской кухни в Краснодаре', 'color: #C41E3A; font-size: 12px;');
 
 })();
